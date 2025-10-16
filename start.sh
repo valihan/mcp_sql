@@ -1,5 +1,3 @@
-# mcp_sql
-
 docker run -d --name mcp_sql -p 8101:8101 \
   -v /var/log/mcp:/var/log/mcp \
   -v /data:/app \
