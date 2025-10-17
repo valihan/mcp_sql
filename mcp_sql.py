@@ -170,12 +170,14 @@ async def get_json():
 @app.get("/")
 async def get_root():
 	print("root")
+	return "root", 200, {'Content-Type': 'text/json; charset=utf-8'}
 
 
 @app.get("/tools")
 async def get_tools():
     """Возвращает описание доступных инструментов"""
     print("tools")
+    return "tools", 200, {'Content-Type': 'text/json; charset=utf-8'}
 
 @app.route("/sql", methods=["POST"])
 async def sql():
