@@ -175,7 +175,7 @@ async def get_root():
 @app.get("/tools")
 async def get_tools():
     """Возвращает описание доступных инструментов"""
-    return [STOCK_PRICE_TOOL]
+    print("tools")
 
 @app.route("/sql", methods=["POST"])
 async def sql():
